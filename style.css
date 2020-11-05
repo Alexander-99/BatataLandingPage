@@ -13,7 +13,7 @@
     --secondary-blue: #1A9AF7;
     --soft-blue: #E7F5FF;
     --warm-black: #201E1C;
-    --black: #282623
+    --black: #282623;
     --grey: #BABABA;
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
@@ -27,7 +27,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;;
+    font-family: 'DM Sans', sans-serif;
 }
 
 header {
@@ -270,3 +270,99 @@ main {
     font-weight: 300;
 }
 
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.product-detail--batata-logo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -12px;
+    left: calc(50% - 20px);
+    background-image: url('./img/imgs/headerLogo.svg');
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.product-detail--title h2 {
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product-detail--title p {
+    margin: 20px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #808080;
+    margin-bottom: 20px;
+}
+
+.product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card .icon-card {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--card .product--card-title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--just-white);
+}
+
+.product-detail--card .product--card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.clock {
+    background-image: url('./img/icon/clock.svg');
+}
+
+.eye {
+    background-image: url('./img/icon/eye.svg');
+}
+
+.symbol {
+    background-image: url('./img/icon/dollar.svg');
+}
+
+.check {
+    background-image: url('./img/icon/check-circle.svg');
+}
