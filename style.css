@@ -324,6 +324,7 @@ main {
     background-color: var(--black);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    overflow: scroll;
 }
 
 .product-detail--card .icon-card {
@@ -365,4 +366,23 @@ main {
 
 .check {
     background-image: url('./img/icon/check-circle.svg');
+}
+
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./img/imgs/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.bitcoin-img-container h2 {
+    font-size: 2.4rem;
+    padding-top: 50px;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--just-white);
 }
