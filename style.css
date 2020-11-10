@@ -152,13 +152,21 @@ main {
     color: #757575;
 }
 
+.main-table-container {
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table, .main-commissions-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
-    font-family: 'Inter', sans-serif;  
+    margin: 0 30px;
+    font-family: 'Inter', sans-serif; 
+    scroll-snap-align: center; 
 }
 
 
@@ -325,7 +333,7 @@ main {
     background-color: var(--black);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-    overflow: scroll;
+    overflow: auto;
 }
 
 .product-detail--card .icon-card {
@@ -508,6 +516,12 @@ main {
     line-height: 1.8rem;
     color: var(--black);
     font-family: 'DM Sans', sans-serif;
+}
+
+.plan-card-ca:hover {
+    cursor: pointer;
+    background-color: var(--warm-black);
+    color: var(--bitcoin-orange);
 }
 
 .plan-card-ca span {
